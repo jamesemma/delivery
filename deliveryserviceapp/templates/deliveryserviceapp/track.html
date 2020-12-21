@@ -1,0 +1,24 @@
+{% extends "deliveryserviceapp/main.html" %}
+
+{% load static %}
+
+{% block body %}
+
+<form action="{% url 'trackerinfo' %}" method="post">
+	{% csrf_token %}
+	<h2 style="text-align: center;">Enter your tracking ID</h2>
+	<hr>
+	<br>
+	<br>
+	<div class="input-group input-group-lg">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text" id="inputGroup-sizing-lg">Find</span>
+	  </div>
+	  <input type="text" name="trackingid" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Enter your tracking ID here">
+	</div>
+	<br>
+	<button style="margin-left: 40%" class="btn btn-success btn-lg">Search</button>
+</form>
+<br>
+<br>
+{% endblock %}

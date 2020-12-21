@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load static %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Royal smart delivery</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+
+{% include "deliveryserviceapp/navbar.html" %}
+
+{% block body %}
+
+<h1 style="text-align: center;">About us</h1>
+<hr>
+
+<div class="container">
+	<h3 style="text-align: center;">Connecting people & possibilities</h3>
+	<hr>
+	<br>
+	<p style="text-align: center;">Connecting people with goods, services, ideas and technologies creates opportunities that fuel innovation, energize businesses and lift communities to higher standards of living. At Royal smart delivery, we believe that a connected world is a better world, and that belief guides everything we do.</p>
+</div>
+
+<div class="container row">
+
+		<div class="col-md-7 aboutimgcontainer">
+			<img class="aboutimg" src="{% static 'images/aboutimage.jpg' %}">
+		</div>
+
+		<div class="col-md-5">
+			<h3 style="text-align: center;">Delivering more than packages</h3>
+			<hr>
+			<p style="text-align: center;">
+				We deliver joy during the holidays. We deliver hope to survivors of natural disasters. Customers count on our diverse portfolio of transportation, e-commerce, and business solutions. Our networks reach more than 80+ countries and territories, linking more than 99 percent of the world’s GDP. Behind it all are our more than 490,000 team members around the world, who are united around the Purple Promise: “I will make every Royal smart delivery experience outstanding.”
+			</p>
+		</div>
+
+</div>
+
+<br>
+<br>
+<br>
+
+{% endblock %}
+
+ {% include 'deliveryserviceapp/footer.html' %}
+
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>

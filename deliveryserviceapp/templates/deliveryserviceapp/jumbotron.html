@@ -1,0 +1,26 @@
+{% load static %}
+
+<style type="text/css">
+	.jumbotron{
+		background-image: url(/static/images/yatch.jpg);
+	}
+
+	#tracking-button{
+		width: 30%;
+		height: 50%;
+	}
+
+
+</style>
+
+<div class="jumbotron" style="text-align: center">
+	<h1 class="display-4">Globally connected, locally invested</h1>
+	<br>
+	<hr class="my-4">
+	<b>We offer the best tracking services.</b>
+	<br>
+	<br>
+
+	<a id="tracking-button" class="btn btn-lg btn-success" href="{% url 'track' %}">Track your product</a>
+	  
+</div>

@@ -1,0 +1,69 @@
+{% extends "deliveryserviceapp/main.html" %}
+
+{% load static %}
+
+{% block body %}
+
+
+<div class="row">
+	
+	<div class="col-sm-12">
+		<div class="card text-center">
+  			<div class="card-header">
+
+    			<ul class="nav nav-pills card-header-pills">
+
+    				<li class="nav-item">
+        				<a style="margin-right: 20px; padding: 10px;" class="nav-link btn btn-outline btn-success btn-block" href="{% url 'home' %}">&#8592; Go back</a>
+      				</li>
+
+    			</ul>
+    			<br>
+    			<br>
+       				 <h2 style="text-align: center"><b>Your tracking information</b></h2>
+       				 <hr>
+					{% for Trackinginfo in Trackinginfos %}
+
+						   <div class="card-body">
+						   		<br>
+							    <br>
+
+    							<h5 class="card-title"><b>Your personal info</b></h5>
+
+   								<p class="card-text">Name: {{Trackinginfo.Name}}</p>
+   								<p class="card-text">Phone: {{Trackinginfo.phone}}</p>
+							    <p class="card-text">Email: {{Trackinginfo.email}}</p>
+
+
+							    <br>
+							    <br>
+
+							    <h5 class="card-title"><b>Your delivery information</b></h5>
+
+							    <p class="card-text">Delivery address: {{Trackinginfo.Deliveryaddress}}</p>
+   								<p class="card-text">Delivery method: {{Trackinginfo.Deliverymethod}}</p>
+							    <p class="card-text">Delivery status: {{Trackinginfo.Deliverystatus}}</p>
+							    <p class="card-text">Current location: {{Trackinginfo.Currentlocation}}</p>
+							    <p class="card-text">Delivery description: {{Trackinginfo.Deliverydescription}}</p>
+							    <br>
+							    <br>
+
+   								 <a href="{% url 'home' %}" class="btn btn-primary">&#8592; Go back</a>
+  							</div>
+
+  					{% endfor %}
+
+  			</div>
+
+
+
+		</div>
+
+	</div>
+
+</div>
+<br>
+<br>
+
+{% endblock %}
+

@@ -1,0 +1,30 @@
+body{
+	background-color: #ffffff;
+	font-family: sans-serif;
+}
+
+.bg-dark{
+	background-color: #000000!important;
+}
+
+nav-link{
+	color: #fff!important;
+}
+
+.aboutimgcontainer{
+	position: relative;
+}
+
+.aboutimg{
+	position:absolute;
+	display: inline;
+	margin-right: 40px; 
+}
+
+footer{
+	background-color: #000000;
+}
+
+.mytext{
+	color: #ffffff;
+}
